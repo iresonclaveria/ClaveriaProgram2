@@ -1,0 +1,32 @@
+// This program prints mass, density and volume.
+#include <iostream>
+#include<iomanip>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	
+	double Mass; 
+	double Density;
+	
+	cout << "Volume" << "=" << "Mass" << "/" << "Density" << endl;
+
+	cout << "Mass in Grams" << endl;
+
+	cin >> Mass;
+
+	cout << "Density in Grams/Cubic Meter" << endl;
+
+	cin >> Density;
+
+	cout << "Volume" << '	' << "=" <<	'	' ;
+
+    cout << setprecision(3) << Mass / Density << endl;
+
+	cout << endl; 
+	
+	_getch();
+	return 0;
+}
